@@ -1,3 +1,7 @@
+---
+import "../styles/global.css"
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +11,9 @@
     <meta name="generator" content={Astro.generator} />
     <title>My Astro Starter</title>
   </head>
-  <body>
-    <slot />
+  <body class="antialiased bg-white dark:bg-black">
+    <div class="min-h-screen text-black dark:text-white">
+      <slot />
+    </div>
   </body>
 </html>
