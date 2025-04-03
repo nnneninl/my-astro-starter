@@ -1,5 +1,6 @@
 ---
 import "@/styles/global.css";
+import Head from "@/components/Head.astro";
 ---
 
 <script is:inline>
@@ -37,11 +38,8 @@ import "@/styles/global.css";
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>My Astro Starter</title>
+    <!-- NOTE: change the props in `<Head />` accordingly -->
+    <Head title="" description="" image="/images/site.png" />
   </head>
   <body class="bg-white antialiased dark:bg-black">
     <div class="min-h-screen text-black dark:text-white">
