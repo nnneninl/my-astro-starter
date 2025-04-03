@@ -1,7 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import ThemeToggle from "@/components/ui/theme-toggle.astro"
 ---
 
 <Layout>
-  <h1>Hello</h1>
+  <div class="flex flex-col h-screen items-center justify-center">
+    <p class="dark:hidden">Toggle Dark Mode</p>
+    <p class="hidden dark:block">Toggle Light Mode</p>
+    <ThemeToggle />
+  </div>
 </Layout>
